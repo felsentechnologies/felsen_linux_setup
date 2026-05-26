@@ -1,0 +1,100 @@
+# number	slug	name	page	aliases	script	function
+0	testeemail	Testar SMTP	1	00,teste_smtp,TESTE_SMTP	apps/testeemail.sh	ferramenta_testeemail
+1	traefik-portainer	Traefik & Portainer	1	01,portainer,traefik,PORTAINER,TRAEFIK	apps/traefik-portainer.sh	ferramenta_traefik_e_portainer
+2	chatwoot	Chatwoot	1	02,CHATWOOT	apps/chatwoot.sh	ferramenta_chatwoot
+3	evolution	Evolution API	1	03,evo,EVO,EVOLUTION	apps/evolution.sh	ferramenta_evolution
+4	minio	MinIO	1	04,MINIO	apps/minio.sh	ferramenta_minio
+5	typebot	Typebot	1	05,TYPEBOT	apps/typebot.sh	ferramenta_typebot
+6	n8n	N8N	1	06,N8N	apps/n8n.sh	ferramenta_n8n
+7	flowise	Flowise	1	07,FLOWISE	apps/flowise.sh	ferramenta_flowise
+8	pgadmin	PgAdmin 4	1	08,PGADMIN	apps/pgadmin.sh	ferramenta_pgAdmin_4
+9	nocobase	Nocobase	1	09,NOCOBASE	apps/nocobase.sh	ferramenta_nocobase
+10	botpress	Botpress	1	BOTPRESS	apps/botpress.sh	ferramenta_botpress
+11	wordpress	Wordpress	1	WORDPRESS	apps/wordpress.sh	ferramenta_wordpress
+12	baserow	Baserow	1	BASEROW	apps/baserow.sh	ferramenta_baserow
+13	mongodb	MongoDB	1	MONGODB	apps/mongodb.sh	ferramenta_mongodb
+14	rabbitmq	RabbitMQ	1	RABBITMQ	apps/rabbitmq.sh	ferramenta_rabbitmq
+15	uptimekuma	Uptime Kuma	1	UPTIMEKUMA	apps/uptimekuma.sh	ferramenta_uptimekuma
+16	calcom	Cal.com	1	CALCOM	apps/calcom.sh	ferramenta_calcom
+17	mautic	Mautic	1	MAUTIC	apps/mautic.sh	ferramenta_mautic
+18	appsmith	Appsmith	1	APPSMITH	apps/appsmith.sh	ferramenta_appsmith
+19	qdrant	Qdrant	1	QDRANT	apps/qdrant.sh	ferramenta_qdrant
+20	woofedcrm	Woofed CRM	1	woofedcrm,WOOFEDCRM	apps/woofedcrm.sh	ferramenta_woofed
+21	formbricks	Formbricks	1	FORMBRICKS	apps/formbricks.sh	ferramenta_formbricks
+22	nocodb	NocoDB	1	NOCODB	apps/nocodb.sh	ferramenta_nocodb
+23	langfuse	Langfuse	1	LANGFUSE	apps/langfuse.sh	ferramenta_langfuse
+24	metabase	Metabase	1	METABASE	apps/metabase.sh	ferramenta_metabase
+25	odoo	Odoo	1	ODOO	apps/odoo.sh	ferramenta_odoo
+26	unoapi	Uno API	1	UNOAPI	apps/unoapi.sh	ferramenta_unoapi
+27	quepasa	Quepasa API	1	QUEPASA	apps/quepasa.sh	ferramenta_quepasa
+28	docuseal	Docuseal	1	DOCUSEAL	apps/docuseal.sh	ferramenta_docuseal
+29	monitor	Grafana + Prometheus + cAdvisor	1	grafana,MONITOR,GRAFANA	apps/monitor.sh	ferramenta_monitor
+30	dify	Dify AI	1	DIFY	apps/dify.sh	ferramenta_dify
+31	ollama	Ollama	1	OLLAMA	apps/ollama.sh	ferramenta_ollama
+32	affine	Affine	1	AFFINE	apps/affine.sh	ferramenta_affine
+33	directus	Directus	1	DIRECTUS	apps/directus.sh	ferramenta_directus
+34	vaultwarden	VaultWarden	1	VAULTWARDEN	apps/vaultwarden.sh	ferramenta_vaultwarden
+35	nextcloud	NextCloud	1	NEXTCLOUD	apps/nextcloud.sh	ferramenta_nextcloud
+36	strapi	Strapi	1	STRAPI	apps/strapi.sh	ferramenta_strapi
+37	phpmyadmin	PhpMyAdmin	1	pma,PHPMYADMIN,PMA	apps/phpmyadmin.sh	ferramenta_phpmyadmin
+38	supabase	Supabase	1	supa,SUPABASE,SUPA	apps/supabase.sh	ferramenta_supabase
+39	ntfy	Ntfy	1	NTFY	apps/ntfy.sh	ferramenta_ntfy
+40	lowcoder	LowCoder	1	LOWCODER	apps/lowcoder.sh	ferramenta_lowcoder
+41	langflow	LangFlow	1	LANGFLOW	apps/langflow.sh	ferramenta_langflow
+42	openproject	OpenProject	1	OPENPROJECT	apps/openproject.sh	ferramenta_openproject
+43	zep	ZEP	1	ZEP	apps/zep.sh	ferramenta_zep
+44	humhub	HumHub	1	HUMHUB	apps/humhub.sh	ferramenta_humhub
+45	yourls	Yourls	1	YOURLS	apps/yourls.sh	ferramenta_yourls
+46	twentycrm	TwentyCRM	2	TWENTYCRM	apps/twentycrm.sh	ferramenta_twentycrm
+47	mattermost	Mattermost	2	MATTERMOST	apps/mattermost.sh	ferramenta_mattermost
+48	outline	Outline	2	OUTLINE	apps/outline.sh	ferramenta_outline
+49	focalboard	Focalboard	2	FOCALBOARD	apps/focalboard.sh	ferramenta_focalboard
+50	glpi	GLPI	2	GLPI	apps/glpi.sh	ferramenta_glpi
+51	anythingllm	Anything LLM	2	anything,AnythingLLM,Anything	apps/anythingllm.sh	ferramenta_anythingllm
+52	excalidraw	Excalidraw	2	Excalidraw	apps/excalidraw.sh	ferramenta_excalidraw
+53	easyappointments	Easy!Appointments	2	EasyAppointments,Easy!Appointments,easy!appointments	apps/easyappointments.sh	ferramenta_easyappointments
+54	documenso	Documenso	2	Documenso	apps/documenso.sh	ferramenta_documenso
+55	tooljet	ToolJet	2	TOOLJET	apps/tooljet.sh	ferramenta_tooljet
+56	stirlingpdf	Stirling PDF	2	StirlingPDF,Stirling,stirling	apps/stirlingpdf.sh	ferramenta_stirlingpdf
+57	clickhouse	ClickHouse	2	ClickHouse,CLICKHOUSE	apps/clickhouse.sh	ferramenta_clickhouse
+58	redisinsight	RedisInsight	2	RedisInsight,REDISINSIGHT	apps/redisinsight.sh	ferramenta_redisinsight
+59	traccar	Traccar	2	Traccar,TRACCAR	apps/traccar.sh	ferramenta_traccar
+60	firecrawl	Firecrawl	2	Firecrawl,FIRECRAWL	apps/firecrawl.sh	ferramenta_firecrawl
+61	wuzapi	Wuzapi	2	Wuzapi,WUZAPI	apps/wuzapi.sh	ferramenta_wuzapi
+62	krayincrm	Krayin CRM	2	KrayinCRM,KRAYINCRM	apps/krayincrm.sh	ferramenta_krayincrm
+63	planka	Planka	2	Planka,PLANKA	apps/planka.sh	ferramenta_planka
+64	wppconnect	WppConnect	2	WppConnect,WPPCONNECT	apps/wppconnect.sh	ferramenta_wppconnect
+65	browserless	Browserless	2	Browserless,BROWSERLESS	apps/browserless.sh	ferramenta_browserless
+66	frappe	Frappe	2	Frappe,FRAPPE	apps/frappe.sh	ferramenta_frappe
+67	bolt	Bolt	2	Bolt,BOLT	apps/bolt.sh	ferramenta_bolt
+68	wisemapping	WiseMapping	2	WiseMapping,WISEMAPPING	apps/wisemapping.sh	ferramenta_wisemapping
+69	evoai	Evo AI	2	EvoAPI,evoapi,EVOAPI	apps/evoai.sh	ferramenta_evoai
+70	keycloak	Keycloak	2	Keycloak,KEYCLOAK	apps/keycloak.sh	ferramenta_keycloak
+71	passbolt	Passbolt	2	Passbolt,PASSBOLT	apps/passbolt.sh	ferramenta_passbolt
+72	gotenberg	Gotenberg	2	Gotenberg,GOTENBERG	apps/gotenberg.sh	ferramenta_gotenberg
+73	wiki	Wiki.js	2	Wiki,WIKI	apps/wiki.sh	ferramenta_wiki
+74	azuracast	AzuraCast	2	AzuraCast,AZURACAST	apps/azuracast.sh	ferramenta_azuracast
+75	shlink	Shlink	2	Shlink,SHLINK	apps/shlink.sh	ferramenta_shlink
+76	rustdesk	RustDesk	2	RustDesk,RUSTDESK	apps/rustdesk.sh	ferramenta_rustdesk
+77	hoppscotch	Hoppscotch	2	Hoppscotch,HOPPSCOTCH	apps/hoppscotch.sh	ferramenta_hoppscotch
+78	transcrevezap	Transcreve Zap	2	transcreve,TRANSCREVE,TRANSCREVEZAP	apps/transcrevezap.sh	ferramenta_transcrevezap
+79	omnitools	OmniTools	2	OMNITOOLS	apps/omnitools.sh	ferramenta_omnitools
+80	serpbear	SerpBear	2	SERPBEAR	apps/serpbear.sh	ferramenta_serpbear
+81	activepieces	ActivePieces	2	ActivePieces,ACTIVEPIECES	apps/activepieces.sh	ferramenta_activepieces
+82	authentik	Authentik	2	AUTHENTIK	apps/authentik.sh	ferramenta_authentik
+83	checkmate	Checkmate	2	CHECKMATE	apps/checkmate.sh	ferramenta_checkmate
+84	heyform	Heyform	2	HEYFORM	apps/heyform.sh	ferramenta_heyform
+85	wekan	Wekan	2	WEKAN	apps/wekan.sh	ferramenta_wekan
+86	opensign	OpenSign	2	OPENSIGN	apps/opensign.sh	ferramenta_opensign
+87	docmost	Docmost	2	DOCMOST	apps/docmost.sh	ferramenta_docmost
+88	netbox	NetBox	2	NETBOX	apps/netbox.sh	ferramenta_netbox
+89	kafka	Kafka	2	KAFKA	apps/kafka.sh	ferramenta_kafka
+90	astracampaign	AstraCampaign	2	ASTRACAMPAIGN	apps/astracampaign.sh	ferramenta_astracampaign
+91	duplicati	Duplicati	2	DUPLICATI	apps/duplicati.sh	ferramenta_duplicati
+92	pgbackweb	PgBackWeb	3	PGBACKWEB	apps/pgbackweb.sh	ferramenta_pgbackweb
+93	jitsi	Jitsi Meet	3	jitsimeet,JITSIMET,JITSI	apps/jitsi.sh	ferramenta_jitsi
+94	codeserver	Code Server	3	code_server,CODE_SERVER,CODESERVER	apps/codeserver.sh	ferramenta_code_server
+95	papra	Papra	3	PAPRA	apps/papra.sh	ferramenta_papra
+96	zerobyte	ZeroByte	3	ZEROBYTE	apps/zerobyte.sh	ferramenta_zerobyte
+97	evolutiongo	Evolution GO	3	EVOLUTIONGO,EVOLUTION_GO,EVOLUTION-GO,evolution-go,evolution_go,evogo,EVOGO	apps/evolutiongo.sh	ferramenta_evolution_go
+98	evocrm	EvoCRM	3	EVOCRM	apps/evocrm.sh	ferramenta_evocrm
