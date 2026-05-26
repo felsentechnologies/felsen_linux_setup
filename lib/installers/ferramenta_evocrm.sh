@@ -4,7 +4,7 @@
 ferramenta_evocrm() {
 
 ## Verifica os recursos
-recursos 4 8 && continue || return
+recursos 4 8 || return
 
 ## Limpa o terminal
 clear

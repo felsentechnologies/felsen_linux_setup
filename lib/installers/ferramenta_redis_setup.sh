@@ -4,7 +4,7 @@
 ferramenta_redis_setup() {
 
 ## Verifica os recursos
-recursos 1 2 && continue || return
+recursos 1 2 || return
 ## Ativa a funcao dados para pegar os dados da vps
 dados
 

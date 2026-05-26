@@ -4,10 +4,10 @@
 ferramenta_baserow() {
 
 ## Verifica os recursos
-recursos 2 4 && continue || return
+recursos 2 4 || return
 
 ## Verifica os recursos
-recursos 1 1 && continue || return
+recursos 1 1 || return
 ## Limpa o terminal
 clear
 

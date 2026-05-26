@@ -1568,20 +1568,34 @@ verificar_stack() {
 # Funcao para verificar recursos
 recursos() {
     # Parametros de entrada: vCPU e GbRam
-    vcpu_requerido=$1
-    ram_requerido=$2
+    local vcpu_requerido="$1"
+    local ram_requerido="$2"
+    local vcpu_disponivel=""
+    local ram_disponivel=""
 
     # Obtendo a quantidade de vCPUs e GB de RAM disponiveis
-    if command -v neofetch >/dev/null 2>&1; then
+    if command -v nproc >/dev/null 2>&1; then
+        vcpu_disponivel="$(nproc)"
+    fi
+
+    if [[ -r /proc/meminfo ]]; then
+        ram_disponivel="$(awk '/MemTotal/ {print int(($2 / 1024 / 1024) + 0.5)}' /proc/meminfo)"
+    fi
+
+    if [[ -z "$vcpu_disponivel" || -z "$ram_disponivel" ]] && command -v neofetch >/dev/null 2>&1; then
         # Debian 11
-        vcpu_disponivel=$(neofetch --stdout | grep "CPU" | grep -oP '\(\d+\)' | tr -d '()')
-        ram_disponivel=$(neofetch --stdout | grep "Memory" | awk '{print $4}' | tr -d 'MiB' | awk '{print int($1/1024 + 0.5)}')
-    elif command -v fastfetch >/dev/null 2>&1; then
+        vcpu_disponivel="${vcpu_disponivel:-$(neofetch --stdout | grep "CPU" | grep -oP '\(\d+\)' | tr -d '()')}"
+        ram_disponivel="${ram_disponivel:-$(neofetch --stdout | grep "Memory" | awk '{print $4}' | tr -d 'MiB' | awk '{print int($1/1024 + 0.5)}')}"
+    fi
+
+    if [[ -z "$vcpu_disponivel" || -z "$ram_disponivel" ]] && command -v fastfetch >/dev/null 2>&1 && command -v jq >/dev/null 2>&1; then
         # Debian 13 (usa saida JSON do fastfetch)
-        vcpu_disponivel=$(fastfetch --json | jq '.cpu.cores')
-        ram_disponivel=$(fastfetch --json | jq '.memory.total / 1024 / 1024' | awk '{print int($1+0.5)}')
-    else
-        echo "Erro: nem neofetch nem fastfetch encontrados. Instale um deles para continuar."
+        vcpu_disponivel="${vcpu_disponivel:-$(fastfetch --json | jq '.cpu.cores')}"
+        ram_disponivel="${ram_disponivel:-$(fastfetch --json | jq '.memory.total / 1024 / 1024' | awk '{print int($1+0.5)}')}"
+    fi
+
+    if [[ -z "$vcpu_disponivel" || -z "$ram_disponivel" ]]; then
+        echo "Erro: nao foi possivel detectar CPU e RAM disponiveis."
         return 1
     fi
 

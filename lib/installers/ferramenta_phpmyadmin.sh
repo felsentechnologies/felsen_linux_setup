@@ -4,7 +4,7 @@
 ferramenta_phpmyadmin() {
 
 ## Verifica os recursos
-recursos 1 2 && continue || return
+recursos 1 2 || return
 
 ## Limpa o terminal
 clear

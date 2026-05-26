@@ -4,7 +4,7 @@
 ferramenta_tooljet() {
 
 ## Verifica os recursos
-recursos 2 4 && continue || return
+recursos 2 4 || return
 
 ## Limpa o terminal
 clear

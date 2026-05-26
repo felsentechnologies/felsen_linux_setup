@@ -4,7 +4,7 @@
 ferramenta_netbox() {
 
 ## Verifica os recursos
-recursos 1 1 && continue || return
+recursos 1 1 || return
 
 ## Limpa o terminal
 clear

@@ -4,7 +4,7 @@
 ferramenta_n8n_quepasa() {
 
 ## Verifica os recursos
-recursos 2 2 && continue || return
+recursos 2 2 || return
 
 ## Limpa o terminal
 clear

@@ -4,7 +4,7 @@
 ferramenta_twentycrm() {
 
 ## Verifica os recursos
-recursos 1 4 && continue || return
+recursos 1 4 || return
 
 ## Limpa o terminal
 clear

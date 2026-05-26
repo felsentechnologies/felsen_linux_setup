@@ -4,7 +4,7 @@
 ferramenta_documenso() {
 
 ## Verifica os recursos
-recursos 1 1 && continue || return
+recursos 1 1 || return
 
 ## Limpa o terminal
 clear
@@ -359,7 +359,7 @@ requisitar_outra_instalacao
 #ferramenta_moodle() {
 #
 ### Verifica os recursos
-#recursos 1 1 && continue || return
+#recursos 1 1 || return
 #
 ### Limpa o terminal
 #clear
