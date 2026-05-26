@@ -133,8 +133,12 @@ clamp_page() {
   local pages
   pages="$(max_pages_for_count "$total")"
 
-  (( current_page < 1 )) && current_page=1
-  (( current_page > pages )) && current_page="$pages"
+  if (( current_page < 1 )); then
+    current_page=1
+  fi
+  if (( current_page > pages )); then
+    current_page="$pages"
+  fi
 }
 
 show_header() {
@@ -169,13 +173,17 @@ show_apps() {
       seen=$((seen + 1))
       continue
     fi
-    (( printed >= PAGE_SIZE )) && break
+    if (( printed >= PAGE_SIZE )); then
+      break
+    fi
     printf "%-5s %-24s %s\n" "$number" "$slug" "$name"
     printed=$((printed + 1))
     seen=$((seen + 1))
   done < <(read_tsv "$APPS_CATALOG")
 
-  (( total == 0 )) && echo "Nenhum app encontrado para a busca atual."
+  if (( total == 0 )); then
+    echo "Nenhum app encontrado para a busca atual."
+  fi
   echo
   show_shortcuts
 }
@@ -200,13 +208,17 @@ show_commands() {
       seen=$((seen + 1))
       continue
     fi
-    (( printed >= PAGE_SIZE )) && break
+    if (( printed >= PAGE_SIZE )); then
+      break
+    fi
     printf "%-28s %s\n" "$slug" "$function"
     printed=$((printed + 1))
     seen=$((seen + 1))
   done < <(read_tsv "$COMMANDS_CATALOG")
 
-  (( total == 0 )) && echo "Nenhum comando encontrado para a busca atual."
+  if (( total == 0 )); then
+    echo "Nenhum comando encontrado para a busca atual."
+  fi
   echo
   show_shortcuts
 }
@@ -342,7 +354,11 @@ interactive_menu() {
       show_apps
     fi
 
-    read -r -p "Escolha: " input
+    if ! read -r -p "Escolha: " input; then
+      echo
+      ui_error "Entrada interativa indisponivel. Execute em um terminal ou use: bash menu.sh <opcao>"
+      return 1
+    fi
     input="$(trim_left "$input")"
 
     if [[ "$input" == /* ]]; then

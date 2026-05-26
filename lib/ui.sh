@@ -8,7 +8,7 @@ vermelho="${vermelho:-\e[91m}"
 reset="${reset:-\e[0m}"
 
 ui_clear() {
-  command -v clear >/dev/null 2>&1 && clear || true
+  [[ -t 1 ]] && command -v clear >/dev/null 2>&1 && clear || true
 }
 
 ui_banner() {
@@ -37,11 +37,11 @@ confirm_yes_no() {
   local prompt="${1:-Continuar?}"
   local answer
   while true; do
-    read -r -p "$prompt (Y/N): " answer
+    read -r -p "$prompt (S/N): " answer
     case "$answer" in
-      Y|y) return 0 ;;
-      N|n) return 1 ;;
-      *) echo "Digite apenas Y ou N." ;;
+      S|s|SIM|Sim|sim|Y|y|YES|Yes|yes) return 0 ;;
+      N|n|NAO|Nao|nao|NÃO|Não|não|NO|No|no) return 1 ;;
+      *) echo "Digite apenas S ou N." ;;
     esac
   done
 }
