@@ -32,6 +32,7 @@ Execute comandos de manutencao:
 ```bash
 bash menu.sh portainer.restart
 bash menu.sh docker.fix
+bash menu.sh dependencias
 ```
 
 Veja a ajuda:
@@ -68,6 +69,12 @@ Os arquivos gerados por heredoc usam o delimitador corporativo `__FELSEN_MANAGED
 - Servidor Linux com Bash.
 - Permissoes administrativas para instalar pacotes e configurar Docker.
 - Acesso de rede para baixar imagens e dependencias das stacks escolhidas.
+
+Para preparar as dependencias base usadas pelos instaladores, execute:
+
+```bash
+bash menu.sh dependencias
+```
 
 ## Creditos
 

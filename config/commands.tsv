@@ -27,5 +27,6 @@ credencial.reset	commands/credencial.reset.sh	criar_arquivo
 quepasa.setup.off	commands/quepasa.setup.off.sh	quepasa.setup.off
 quepasa.setup.on	commands/quepasa.setup.on.sh	quepasa.setup.on
 limpar	commands/limpar.sh	limpar
+dependencias	commands/dependencias.sh	dependencias
 docker.fix	commands/docker.fix.sh	docker.fix
 docker.fix2	commands/docker.fix2.sh	docker.fix2
